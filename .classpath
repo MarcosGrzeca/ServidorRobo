@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/javax-websocket-client-impl-9.2.11.v20150529.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/javax-websocket-server-impl-9.2.11.v20150529.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/javax.websocket-api-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/websocket-api-9.2.11.v20150529.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/websocket-client-9.2.11.v20150529.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/websocket-common-9.2.11.v20150529.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/websocket-server-9.2.11.v20150529.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org/eclipse/jetty/websocket/websocket-servlet-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-alpn-client-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-alpn-server-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-annotations-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-cdi-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-client-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-continuation-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-deploy-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-http-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-io-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-jaas-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-jaspi-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-jmx-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-jndi-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-plus-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-proxy-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-quickstart-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-rewrite-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-schemas-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-security-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-server-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-servlet-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-servlets-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-util-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-webapp-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/jetty-xml-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="lib/org/eclipse/jetty/servlet-api-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/jpl.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
