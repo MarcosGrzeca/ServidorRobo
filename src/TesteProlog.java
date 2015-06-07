@@ -2,9 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.applet.Applet;
-import java.util.Hashtable;
-import jpl.*;
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+
 import jpl.Query;
 /**
  *
@@ -19,7 +22,19 @@ public class TesteProlog{
     
         public static void main( String argv[] )
         {
-        
+        	
+//        	 LoggedPrintStream lpsOut = LoggedPrintStream.create(System.out);
+//             LoggedPrintStream lpsErr = LoggedPrintStream.create(System.err);
+//
+//             // Set them to stdout / stderr
+//             System.setOut(lpsOut);
+//             System.setErr(lpsErr);
+
+
+            //read a line from the console
+            
+            //create an print writer for writing to a file
+            
 //        String t0 = "chdir('src/cods_prolog/')";
 //        Query q0 = new Query(t0);
         
@@ -67,12 +82,23 @@ public class TesteProlog{
         Query q2 = new Query(t2);
         System.out.println( t2 + " " + (q2.hasSolution() ? "correcto" : "fallo") );
 //      
+        
+//        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//        PrintStream ps = new PrintStream(baos);
+//        // IMPORTANT: Save the old System.out!
+//        PrintStream old = System.out;
+//        // Tell Java to use your special stream
+//        System.setOut(ps);
+//        
 
         String t3 = "consult('C:/Users/Marcos/Documents/NetBeansProjects/AppJavaProlog/AppJavaProlog/src/cods_prolog/trabalho2.pl')";
         Query q3 = new Query(t3);
         System.out.println( t3 + " " + (q3.hasSolution() ? "correcto" : "fallo") );
 
-        String t4 = "teste14";
+        
+        
+        
+        String t4 = "teste14.";
         Query q4 = new Query(t4);
         
         /*String teste = q4.hasMoreSolutions();        
@@ -89,7 +115,11 @@ public class TesteProlog{
         
         //String teste = System.out.printl(q4.hasSolution());
         
-        System.err.print(q4.hasSolution());
+        System.out.println("teste");
+        System.out.println("teste");
+        
+        
+        System.out.println(q4.hasSolution());
         //System.out.println(teste);
         
         
@@ -98,8 +128,64 @@ public class TesteProlog{
 //            System.out.println("ANTES");
 //            System.out.println(solution.);
 //        }
+        
+        
+        
+        System.out.println("00000000000000000000000000000000000");
+        
+        Query   q5 = new Query("teste14");
+       // q5.open();
+//        System.out.println( q5.debugString());
+//        System.out.println( q5.goal());
+//        System.out.println( q5.toString());
+        System.out.println( q5.oneSolution());
+        
+        
+        System.out.println("11111111111111111111111111");
+
+//        Console console = System.console();
+//        if (console != null) {
+//        	System.out.println("222");
+//          System.out.println(console.readLine());  
+//        }
+//        
+        // Print some output: goes to your special stream
+//        System.out.println("Foofoofoo!");
+//        // Put things back
+//        System.out.flush();
+//        System.setOut(old);
+//        // Show what happened
+//        System.out.println("Here: " + baos.toString());
+        
+//        System.setOut(lpsOut.underlying);
+//        System.setErr(lpsErr.underlying);
+//        
+//        System.out.println("----- Log for System.out: -----\n" + lpsOut.buf);
+//        System.out.println("----- Log for System.err: -----\n" + lpsErr.buf);
+        
+        
+        //Hashtable localHashtable = q5.getSubstWithNameVars();
+//        /* 119 */     if (localHashtable != null) {
+//        /* 120 */       q5.close();
+//        /* 121 */       System.out.println(localHashtable.get("Term"));
+//        /*     */     }
+//        
+//        while ( q5.hasMoreElements() ) {
+//         java.util.Hashtable solution = (Hashtable) q5.nextElement();
+//         System.out.println( "X = " + (Term) solution.get("X"));
+//        }
      
         
+        System.out.println("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+        
+        Host host = new Host();
+        String command = "java -jar \"C:/wamp/www/applet.jar\"";
+        System.out.println(command);
+        String retornoProlog = host.executeCommand(command);
+        
+        
+        //output to the file a line
+                
     }
         
     public void init() {

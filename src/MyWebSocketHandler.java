@@ -11,6 +11,8 @@ import org.eclipse.jetty.websocket.api.annotations.WebSocket;
 
 @WebSocket
 public class MyWebSocketHandler {
+	
+	Session session;
 
     @OnWebSocketClose
     public void onClose(int statusCode, String reason) {
@@ -24,6 +26,7 @@ public class MyWebSocketHandler {
 
     @OnWebSocketConnect
     public void onConnect(Session session) {
+    	this.session = session;
         System.out.println("Connect: " + session.getRemoteAddress().getAddress());
         try {
 
@@ -50,5 +53,17 @@ public class MyWebSocketHandler {
     @OnWebSocketMessage
     public void onMessage(String message) {
         System.out.println("Message: " + message);
+        try {
+        	Host host = new Host();
+            String command = "java -jar \"C:/wamp/www/applet.jar\"";
+            System.out.println(command);
+            String retornoProlog = host.executeCommand(command);
+            
+			this.session.getRemote().sendString(retornoProlog);
+        	
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 }
